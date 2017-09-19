@@ -1,0 +1,218 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BusinessCard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 59ADBB67
+P 4050 3800
+F 0 "BT1" H 4150 3900 50  0000 L CNN
+F 1 "Battery_Cell" H 4150 3800 50  0000 L CNN
+F 2 "" V 4050 3860 50  0001 C CNN
+F 3 "" V 4050 3860 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 59ADBBAD
+P 4800 3750
+F 0 "D1" H 4800 3850 50  0000 C CNN
+F 1 "LED" H 4800 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 4800 3750 50  0001 C CNN
+F 3 "" H 4800 3750 50  0001 C CNN
+	1    4800 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D2
+U 1 1 59ADBC07
+P 5100 3750
+F 0 "D2" H 5100 3850 50  0000 C CNN
+F 1 "LED" H 5100 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 5100 3750 50  0001 C CNN
+F 3 "" H 5100 3750 50  0001 C CNN
+	1    5100 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D3
+U 1 1 59ADBC28
+P 5400 3750
+F 0 "D3" H 5400 3850 50  0000 C CNN
+F 1 "LED" H 5400 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 5400 3750 50  0001 C CNN
+F 3 "" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D4
+U 1 1 59ADBC46
+P 5700 3750
+F 0 "D4" H 5700 3850 50  0000 C CNN
+F 1 "LED" H 5700 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 5700 3750 50  0001 C CNN
+F 3 "" H 5700 3750 50  0001 C CNN
+	1    5700 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 59ADBCA5
+P 5100 4250
+F 0 "Q1" H 5300 4300 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 5300 4200 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 5300 4350 50  0001 C CNN
+F 3 "" H 5100 4250 50  0001 C CNN
+	1    5100 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3900 4800 4000
+Wire Wire Line
+	4800 4000 6300 4000
+Wire Wire Line
+	5200 4000 5200 4050
+Wire Wire Line
+	5100 3900 5100 4000
+Connection ~ 5100 4000
+Wire Wire Line
+	5400 4000 5400 3900
+Connection ~ 5200 4000
+Wire Wire Line
+	5700 4000 5700 3900
+Connection ~ 5400 4000
+Wire Wire Line
+	4050 3400 4050 3600
+Wire Wire Line
+	4050 3450 6300 3450
+Wire Wire Line
+	4800 3450 4800 3600
+Wire Wire Line
+	5100 3450 5100 3600
+Connection ~ 4800 3450
+Wire Wire Line
+	5400 3450 5400 3600
+Connection ~ 5100 3450
+Wire Wire Line
+	5700 3450 5700 3600
+Connection ~ 5400 3450
+$Comp
+L GND #PWR2
+U 1 1 59ADBDD4
+P 5200 4550
+F 0 "#PWR2" H 5200 4300 50  0001 C CNN
+F 1 "GND" H 5200 4400 50  0000 C CNN
+F 2 "" H 5200 4550 50  0001 C CNN
+F 3 "" H 5200 4550 50  0001 C CNN
+	1    5200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 59ADBDFA
+P 4050 4000
+F 0 "#PWR1" H 4050 3750 50  0001 C CNN
+F 1 "GND" H 4050 3850 50  0000 C CNN
+F 2 "" H 4050 4000 50  0001 C CNN
+F 3 "" H 4050 4000 50  0001 C CNN
+	1    4050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3900 4050 4000
+Wire Wire Line
+	5200 4450 5200 4550
+$Comp
+L LED D5
+U 1 1 59ADC859
+P 6000 3750
+F 0 "D5" H 6000 3850 50  0000 C CNN
+F 1 "LED" H 6000 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 6000 3750 50  0001 C CNN
+F 3 "" H 6000 3750 50  0001 C CNN
+	1    6000 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D6
+U 1 1 59ADC87F
+P 6300 3750
+F 0 "D6" H 6300 3850 50  0000 C CNN
+F 1 "LED" H 6300 3650 50  0000 C CNN
+F 2 "LEDs:LED_1206" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3450 6000 3600
+Connection ~ 5700 3450
+Wire Wire Line
+	6300 3450 6300 3600
+Connection ~ 6000 3450
+Wire Wire Line
+	6000 4000 6000 3900
+Connection ~ 5700 4000
+Wire Wire Line
+	6300 4000 6300 3900
+Connection ~ 6000 4000
+Text GLabel 4800 4250 0    60   Input ~ 0
+Sense
+Wire Wire Line
+	4800 4250 4900 4250
+$Comp
+L +3.3V #PWR?
+U 1 1 59BF43B7
+P 4050 3400
+F 0 "#PWR?" H 4050 3250 50  0001 C CNN
+F 1 "+3.3V" H 4050 3540 50  0000 C CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 3450
+$EndSCHEMATC
