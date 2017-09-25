@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name CardElements)(type KiCad)(uri "$(KIPRJMOD)/libraries/CardElements.pretty")(options "")(descr ""))
+  (lib (name Vias)(type KiCad)(uri "$(KIPRJMOD)/libraries/Vias.pretty")(options "")(descr ""))
 )
